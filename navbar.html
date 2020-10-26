@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0
+        }
+        body{
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo{
+            font-size: 50px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            position: absolute;
+            top: 0;
+            left: 80px;
+            color: wheat;
+
+        }
+        #icon{
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 60px;
+            cursor:pointer ;
+            border-radius: 50%;
+        }
+        
+        #menu{
+            width: 0px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            top: 0;
+            right: 100px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+            transition: 0.4s linear;
+        }
+        #menu a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 30px;
+            color: black;
+         }
+         #menu a:hover{
+             color: brown;
+         }
+    </style>
+
+<body>
+    <div class="logo">
+        TECH
+    </div>
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </div>
+    <img src="menu.jpeg" id="icon" onclick="myfun();">
+    <script>
+       function myfun(){
+             var menu =  document.getElementById('menu');
+             if(menu.style.width=="0px"){
+                 menu.style.width="72%";
+             }else{
+                 menu.style.width = "0px";
+             }
+        }
+    </script>
+</body>
+</head>
+
+</html>
